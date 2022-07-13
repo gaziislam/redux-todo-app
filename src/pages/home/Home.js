@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./home.css"
 
 import ButtonGroup from "@mui/material/ButtonGroup"
@@ -15,8 +16,13 @@ const Home = () => {
           disableElevation
           variant="contained"
         >
-          <Button>Log in</Button>
-          <Button>Register</Button>
+          <Link to="/login">
+            <Button>Login</Button>
+          </Link>
+
+          <Link to="/register">
+            <Button>Register</Button>
+          </Link>
         </ButtonGroup>
       </div>
     </div>
